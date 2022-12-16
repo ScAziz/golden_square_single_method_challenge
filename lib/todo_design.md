@@ -9,9 +9,9 @@ _user story_
 # 2 Describe the method signature
 _include name, parameters, return value and any side effects_
 ```ruby
-include_todo?(text)
+includes_todo?(text)
 
-to_do = include_todo(text)
+to_do = includes_todo?(text)
 
 # to_do is a string containing #TODO
 
@@ -24,19 +24,19 @@ to_do = include_todo(text)
 
 ```ruby 
 #1 
-include_todo("#TODO: Eat cheese")
+includes_todo?("#TODO: Eat cheese")
 #=> true
 
 #2
-include_todo("where is the string?")
+includes_todo?("where is the string?")
 #=> false
 
 #3 
-include_todo("#todo: Eat cheese")
+includes_todo?("#todo: Eat cheese")
 #=> false
 
 #4
-include_todo("")
+includes_todo?("")
 #=> fail "No text given."
 
 
